@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Add your custom styles here */
         body {
@@ -20,7 +22,6 @@
         /* Style the navigation bar */
         .navbar-custom {
             background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the navbar */
-            height: 200px;
         }
 
         .navbar-nav .nav-link {
@@ -54,38 +55,63 @@
             padding: 20px;
             display: none;
         }
+
+        /* Remove bullet points from hobbies list */
+        #hobbiesAlert ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="javascript:void(0)" id="showAlert">Katlego Molale</a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="skills.html">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="experience.html">Experience</a>
-                </li>
-            </ul>
+        <div class="container">
+            <!-- Separate the name and LinkedIn icon -->
+            <a class="navbar-brand" href="javascript:void(0)" id="showAlert">
+                Katlego Molale
+            </a>
+            <a class="navbar-brand" href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Rest of your navigation code remains the same -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" id="navLinks">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">EXPERIENCE</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Transitional Alert -->
+    <!-- Transitional Alert for Contact Details -->
     <div class="transitional-alert" id="contactAlert">
         <h3>Contact Details</h3>
         <p>Email: molalekatleho@gmail.com</p>
         <p>Phone: (267) 75538758</p>
-        <p> Address : P O BOX Gaborone</p>
-        <button type="button" class="btn btn-secondary" id="closeAlert">Close</button>
+        <p>Address: P O BOX Gaborone</p>
+        
+    </div>
+
+    <!-- Transitional Alert for Hobbies (Initially hidden) -->
+    <div class="transitional-alert" id="hobbiesAlert" style="display: none;">
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Hiking</li>
+            <li>Coding</li>
+            <!-- Add your hobbies here -->
+        </ul>
     </div>
 
     <!-- Bootstrap and JavaScript scripts (you can copy this part from your previous code) -->
@@ -95,15 +121,27 @@
     
     <!-- Custom JavaScript -->
     <script>
-        // Show the transitional alert when clicking on the navbar brand
-        document.getElementById("showAlert").addEventListener("click", function() {
+        // Function to show Contact Details
+        function showContactDetails() {
             document.getElementById("contactAlert").style.display = "block";
-        });
+            // Hide navigation links
+            document.getElementById("navLinks").style.display = "none";
+            // Hide Contact Details and show Hobbies after 5 seconds
+            setTimeout(function() {
+                document.getElementById("contactAlert").style.display = "none";
+                document.getElementById("hobbiesAlert").style.display = "block";
+                // Automatically go back to displaying Contact Details after 5 seconds
+                setTimeout(function() {
+                    document.getElementById("contactAlert").style.display = "block";
+                    document.getElementById("hobbiesAlert").style.display = "none";
+                    // Show navigation links
+                    document.getElementById("navLinks").style.display = "block";
+                }, 5000); // 5000 milliseconds (5 seconds)
+            }, 5000); // 5000 milliseconds (5 seconds)
+        }
 
-        // Close the transitional alert
-        document.getElementById("closeAlert").addEventListener("click", function() {
-            document.getElementById("contactAlert").style.display = "none";
-        });
+        // Show the transitional alert for Contact Details when clicking on the navbar brand
+        document.getElementById("showAlert").addEventListener("click", showContactDetails);
     </script>
 </body>
 </html>
