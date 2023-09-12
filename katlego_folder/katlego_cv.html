@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Add your custom styles here */
+        body {
+            /* Set the background image and adjust properties */
+            background-image: url(https://cdn.pixabay.com/photo/2017/09/21/19/06/woman-2773007_1280.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            color: white;
+        }
+
+        /* Style the navigation bar */
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.5); /* Add transparency to the navbar */
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 24px; /* Adjust the font size as needed */
+            color: white;
+        }
+
+        .navbar-brand {
+            color: white;
+            cursor: pointer; /* Add a pointer cursor to indicate clickability */
+        }
+
+        /* Style the content */
+        .container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 36px; /* Adjust the heading font size */
+        }
+
+        /* Style the transitional alert */
+        .transitional-alert {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+
+        /* Remove bullet points from hobbies list */
+        #hobbiesAlert ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <!-- Separate the name and LinkedIn icon -->
+            <a class="navbar-brand" href="javascript:void(0)" id="showAlert">
+                Katlego Molale
+            </a>
+            <a class="navbar-brand" href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Rest of your navigation code remains the same -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" id="navLinks">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">EXPERIENCE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Transitional Alert for Contact Details -->
+    <div class="transitional-alert" id="contactAlert">
+        <h3>Contact Details</h3>
+        <p>Email: molalekatleho@gmail.com</p>
+        <p>Phone: (267) 75538758</p>
+        <p>Address: P O BOX Gaborone</p>
+        
+    </div>
+
+    <!-- Transitional Alert for Hobbies (Initially hidden) -->
+    <div class="transitional-alert" id="hobbiesAlert" style="display: none;">
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Hiking</li>
+            <li>Coding</li>
+            <!-- Add your hobbies here -->
+        </ul>
+    </div>
+
+    <!-- Bootstrap and JavaScript scripts (you can copy this part from your previous code) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Function to show Contact Details
+        function showContactDetails() {
+            document.getElementById("contactAlert").style.display = "block";
+            // Hide navigation links
+            document.getElementById("navLinks").style.display = "none";
+            // Hide Contact Details and show Hobbies after 5 seconds
+            setTimeout(function() {
+                document.getElementById("contactAlert").style.display = "none";
+                document.getElementById("hobbiesAlert").style.display = "block";
+                // Automatically go back to displaying Contact Details after 5 seconds
+                setTimeout(function() {
+                    document.getElementById("contactAlert").style.display = "block";
+                    document.getElementById("hobbiesAlert").style.display = "none";
+                    // Show navigation links
+                    document.getElementById("navLinks").style.display = "block";
+                }, 5000); // 5000 milliseconds (5 seconds)
+            }, 5000); // 5000 milliseconds (5 seconds)
+        }
+
+        // Show the transitional alert for Contact Details when clicking on the navbar brand
+        document.getElementById("showAlert").addEventListener("click", showContactDetails);
+    </script>
+</body>
+</html>
+

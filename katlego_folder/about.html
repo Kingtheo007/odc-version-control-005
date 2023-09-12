@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .jumping-image {
+            max-width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+        }
+
+        .jumping-image:hover {
+            animation: jump 0.5s ease-in-out infinite; /* Apply the animation on hover */
+        }
+
+        @keyframes jump {
+            0%, 100% {
+                transform: translateY(0); /* Start and end position */
+            }
+            50% {
+                transform: translateY(-10px); /* Middle position, adjust the value for the jump height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Content of the About Me page -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Profile image with the jumping effect -->
+                <img src="https://cdn.pixabay.com/photo/2016/05/30/13/05/girl-1424685_1280.png" alt="Profile Picture" class="img-fluid rounded-circle jumping-image">
+            </div>
+            <div class="col-md-8">
+                <h1>About Me</h1>
+                <p>
+                    I am a highly motivated web developer with a passion for creating user-friendly and responsive websites. 
+                    With only a month of experience in web development, I am skilled in HTML, CSS, JavaScript, and various web development frameworks.
+                </p>
+                <p>
+                    My goal is to leverage my technical skills and creativity to build innovative and visually appealing web solutions that 
+                    meet and exceed clients' expectations. I enjoy working collaboratively in teams and am dedicated to continuous learning and improvement.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript scripts (you can copy this part from your index.html file) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
