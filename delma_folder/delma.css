@@ -1,7 +1,7 @@
 div.b {
 	width: 150px;
 	height: 80px;
-	background-color: yellow;
+	background-color:bisque(231, 213, 190);
 	transform: skewY(20deg);
   }
   
@@ -27,13 +27,13 @@ body {
 }
 .left {
 	position: initial;
-	background-color: rgb(126, 219, 231);
+	background-color:rgb(231, 213, 190);
 	padding: 20px;
 
 }
 .right {
 	position: initial;
-	background-color: rgb(162, 202, 206);
+	background-color:rgb(39, 47, 58);
 	padding: 20px;
 
 }
@@ -42,7 +42,7 @@ body {
 	margin-bottom: 30px;
 }
 .h2 {
-	background-color: rgb(4, 96, 150);
+	background-color: bisque;
 }
 
 
