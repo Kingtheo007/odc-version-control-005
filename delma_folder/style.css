@@ -1,4 +1,4 @@
-<style>
+
 img {
     border:13px;
     border-color:black;
@@ -21,7 +21,7 @@ body {
   background-size:cover;
   background-position: center center;
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 70;
   padding: 0;
   color:white;
 }
@@ -56,19 +56,3 @@ header {
     width: 50%;
     padding: 15px;
 }
-
-/* Add more styling as desired */
-
-Step 3: Add JavaScript functionality
-Create a JavaScript file (e.g., script.js) to add interactivity to the CV.
-
-// Example: Hide/show content in columns on button click
-let buttons = documet.querySelectorAll('.column button');
-
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        let content = this.nextElementSibling;
-        content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-    });
-});
-    </style>
