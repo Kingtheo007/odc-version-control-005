@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang=" en ">
 <head>
   <meta charset="UTF-8">
@@ -9,56 +9,18 @@
     <script src="https://code.jquery.com-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awsome.min.css">
-    <style>
-      body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 15px;
-}
-
-/* Add more styling as desired */
-
-Step 3: Add JavaScript functionality
-Create a JavaScript file (e.g., script.js) to add interactivity to the CV.
-
-// Example: Hide/show content in columns on button click
-let buttons = document.querySelectorAll('.column button');
-
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        let content = this.nextElementSibling;
-        content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-    });
-});
-    </style>
+    <img src="web-development(4).png" alt="img\del.img" width="128" height="128">
+    <img src="world-wide-web(1).png" alt="img\del.img" width="128" height="128">
+    <img src="backend(1).png" alt="img\del.img" width="128" height="128">
+    <img src="python(2).png" alt="img\del.img" width="128" height="128">
+    <img src="web-link.png" alt="img\del.img" width="128" height="128">
 </head>
 <body>
+  <element class="rotate">
+    <img>
+        <element class="world-wide-web">
+  <div class="img\del.img"></div>
+  <nav>
   <section id="nav-bar">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" dats-target="#navbarNav" aria-controls="navbar" aria-label="Toggle nagivation">
@@ -70,11 +32,16 @@ buttons.forEach(button => {
       <h2>Web Developer</h2>
       </header>
   </section>
-
+  </nav>
+  <nav>
       <section id="bio">
         <h3>Professional Bio</h3>
         <p>Highly skilled web designer/developer with experience in designing and user friendly websites. Seeking a challenging position to utilize my knowledge and expertise in delivering creative and innovative web solutions.</p>
       </section>
+  </nav>
+  <nav>
+
+      <a class="nav-link" href="#">Skills <span class="sr-only">(current)</span></a>
 
       <section id="skills">
         <h3>Skills</h3>
@@ -95,19 +62,23 @@ buttons.forEach(button => {
           <li>Knowledge of UX/UL design principles and best practices</li>
         </ul>
       </section>
-
+      <li class="nav-item">
+        <a class="nav-link" href="#">project</a>
+      </li>
       <section id="project">
         <h3>Project</h3>
         <div class="project">
           <p>Created an online digital CV using HTML, CSS and JavaScript code</p>
         </div>
       </section>
-
+      <li class="nav-item">
+        <a class="nav-link" href="#">Details</a>
+      </li>
       <section id="Details">
         <h3>Personal Details</h3>
         <form>
-          <input type="text" placeholder="Your Name and Surcame">
-          <input type="email" placeholder="Your email">
+          <input placeholder="Your Name and Surcame">
+          <input type="email" placeholder="Your email"> <p>patlakwedelma@gmail.com</p>>
           <input type="DOB" placeholder=" Date of Birth">
           <input type="Gender" placeholder="Sex">
           <input type="Contact" placeholder="Phone number">
@@ -117,7 +88,9 @@ buttons.forEach(button => {
           <button type="Save" name="action" value="Save">Save</Button>
         </form>
       </section>
-
+      <li class="nav-item">
+        <a class="nav-link" href="#">education</a>
+      </li>
       <section id="education">
         <h3>Education</h3>
         <ul>
@@ -127,35 +100,4 @@ buttons.forEach(button => {
         </ul>
       </section>
  
-    
-        <h1>Your Name</h1>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <!-- Your section content goes here -->
-            </div>
-            <div class="column">
-                <!-- Your section content goes here -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <!-- Your section content goes here -->
-            </div>
-            <div class="column">
-                <!-- Your section content goes here -->
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
-
-<div class="column">
-    <h2>Education</h2>
-    <button>Show/Hide Details</button>
-    <div class="content">
-        <!-- Your education details go here -->
-    </div>
-</div
+     </html>
