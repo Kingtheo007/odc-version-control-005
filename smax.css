@@ -5,6 +5,9 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url(images/OIP.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .pop {
@@ -53,4 +56,18 @@ li {
     transform: scale(1.05);
     width: 40px;
     height: 30px;
+}
+
+@media(max-width: 784px) {
+    .hip {
+        max-width: 100%;
+    }
+
+   
+}
+
+@media(max-width: 459px) {
+    .hip .pop {
+        flex-direction: column;
+    }
 }
