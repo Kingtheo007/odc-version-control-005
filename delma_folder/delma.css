@@ -1,126 +1,131 @@
-/* Reset styles */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-/* Body styles */
+div.b {
+	width: 150px;
+	height: 80px;
+	background-color:bisque;
+	transform:skew(20deg)
+  } 
+  .skew{
+	transform: skew(15deg,20deg);
+	
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
 body {
-    background-color: rgb(219, 231, 236);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background-color: rgb(219, 231, 236);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-/* General classes */
-.skew {
-    transform: skew(15deg, 20deg);
-}
-
 .full {
-    width: 150%;
-    max-width: 1000px;
-    min-height: 1000px;
-    background-color: rgb(162, 183, 204);
-    display: grid;
-    grid-template-columns: 2fr 4fr;
+	width: 150%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background-color: rgb(162, 183, 204);
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 2fr 4fr;
 }
-
-/* Container styles */
-.left, .right {
-    position: initial;
-    padding: 20px;
-    min-height: 1000px;
-}
-
 .left {
-    background-color: bisque;
-}
+	position: initial;
+	background-color:bisque;
+	padding: 20px;
+	min-height: 1000px;
 
+}
 .right {
-    background-color: rgb(162, 183, 204);
-}
+	position: initial;
+	background-color:rgb(162, 183, 204);
+	padding: 20px;
+	min-height: 1000px;
 
-.div.b {
-    width: 150px;
-    height: 80px;
-    background-color: bisque;
-    transform: skew(20deg);
 }
-
-/* Typography */
+.image, .Contact, .Skills, .Language, .Hobbies, .title,
+.Professional Bio, .Experience, .Education, .project {
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
 .h2 {
-    background-color: bisque;
+	background-color: bisque;
 }
 
-.image, .Contact, .Skills, .Language, .Hobbies, .title, 
-.ProfessionalBio, .Experience, .Education, .project {
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-/* Table styles */
 .education-table {
     width: 100%;
     border-collapse: collapse;
 }
 
 .education-table td {
-    border: 1px solid #0d0d0d;  /* Light border for clarity */
+    border: 1px solid #0d0d0d;  /* Adding a light border for clarity */
     padding: 8px;
     text-align: left; 
 }
 
+/* Add some space between rows for better clarity */
 .education-table tr + tr {
     margin-top: 10px;
 }
 
-/* Image styles */
+
 .img {
-    display: flex;
-    justify-content: center;
-    animation: rotate360 30s forwards;  /* Rotates container 360 degrees over 30 seconds */
-}
+		display: flex;
+		justify-content: center;
+	}
+	
+	@keyframes rotate360 {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+	
+	.img {
+		display: flex;
+		justify-content: center;
+		animation: rotate360 30s forwards; /* This rotates the container 360 degrees over 30 seconds */
+	}
+	
+	
 
-@keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
-/* Navigation styles */
 #navlist {
-    position: relative;
-}
+	position: relative;
+  }
+  
+  #navlist li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 0;
+  }
+  
+  #navlist li, #navlist a {
+	height: 44px;
+	display: block;
+  }
+  
+  #web-development {
+	left: 0px;
+	width: 100px;
+	background: url('delma_folder/del_img/web-development.png');
+	
+  }
+ 
 
+  #backend {
+	left: 0px;
+	width: 100px;
+	background: url('delma_folder/del_img/backend.png');
 
-/* #navlist li, #navlist a {
-    height: 44px;
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-} */
+  }
+  
+  #world-wide-web {
+	left: 0px;
+	width: 100x;
+	background: url('delma_folder/del_img/world-wide-web.png');
 
-#web-development, #backend, #world-wide-web {
-    left: 0px;
-    width: 100px;
-}
-
-#web-development {
-    background: url('delma_folder/del_img/web-development.png');
-}
-
-#backend {
-    background: url('delma_folder/del_img/backend.png');
-}
-
-#world-wide-web {
-    background: url('delma_folder/del_img/world-wide-web.png');
-}
+  }
