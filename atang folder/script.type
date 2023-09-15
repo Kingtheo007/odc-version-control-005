@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":
+[{"@type":"WebSite","@id":"https://bootstrapmade.com/#website","url":"https://bootstrapmade.com/","name":"BootstrapMade","description":"Bootstrap Templates | Premium & Free Download","potentialAction":[{"@type":"SearchAction","target":"https://bootstrapmade.com/search/?q={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},
+{"@type":"ImageObject","@id":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/#primaryimage","inLanguage":"en-US","url":"https://bootstrapmade.com/content/templatefiles/iPortfolio/iPortfolio-bootstrap-website-template.webp","width":1320,"height":990,"caption":"iPortfolio - Bootstrap Portfolio Websites Template"},
+{"@type":"WebPage","@id":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/#webpage","url":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/","name":"iPortfolio - Bootstrap Portfolio Websites Template | BootstrapMade","isPartOf":
+{"@id":"https://bootstrapmade.com/#website"},
+     "primaryImageOfPage":{"@id":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/#primaryimage"},
+     "datePublished":"Thu, 27 Jul 2023 09:53:18 +0000","dateModified":"Thu, 27 Jul 2023 09:53:18 +0000","description":"iPortfolio is a modern personal CV and portfolio HTML template. 
+     It's creative, minimal and clean design.","breadcrumb":
+     {"@id":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/#breadcrumb"},
+     "inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/"]}]},
+     {"@type":"BreadcrumbList","@id":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/#breadcrumb","itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://bootstrapmade.com/","url":"https://bootstrapmade.com/","name":"Home"}},
+  {"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/",
+     "url":"https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/","name":"iPortfolio - Bootstrap Portfolio Websites Template"}}]}]}
+
+
+
+
+
+
+
+
+
+</script>
