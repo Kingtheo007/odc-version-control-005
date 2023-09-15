@@ -1,0 +1,73 @@
+        /*body {
+              background-color: #71718c;
+              color: #ffffff;
+              font-size: 100px;
+                }
+
+            h1 {
+              font-size: 30px;
+            }
+            .text-1 {
+              animation: text1;
+            }
+            .text-2 {
+              animation: text2;
+            }
+            .text-1,
+            .text-2 {
+              overflow: hidden;
+              white-space: nowrap;
+              display: inline-block;
+              position: relative;
+              animation-duration: 10s;
+              animation-timing-function: steps(15, end);
+              animation-iteration-count: infinite;
+            }
+            .text-1::after,
+            .text-2::after {
+              content: "|";
+              position: absolute;
+              right: 0;
+              animation: caret infinite;
+              animation-duration: 1s;
+              animation-timing-function: steps(1, end);
+            }
+            @keyframes text2 {
+              0%,
+              50%,
+              100% {
+                width: 0;
+              }
+              60%,
+              90% {
+                width: 21.2em;
+              }
+            }
+            @keyframes text1 {
+              0%,
+              50%,
+              100% {
+                width: 0;
+              }
+              10%,
+              40% {
+                width: 17em;
+              }
+            }
+            @keyframes caret {
+              0%,
+              100% {
+                opacity: 0;
+              }
+              50% {
+                opacity: 1;
+              }
+            } */
+        
+            .photo {
+              border-radius: 140px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 60%;
+            }
