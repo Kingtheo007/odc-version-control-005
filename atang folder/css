@@ -197,11 +197,11 @@ main .profile{
 
 .profile-image{
   position: relative;
-  height: 84px;
+  height: 32px;
 }
 .profile-image img{
   position: relative;
-  top: -82px;
+  top: -32px;
   border-radius: 50%;
   border: 3px solid white;
   width: 134px;
